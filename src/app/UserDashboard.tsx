@@ -104,8 +104,6 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ users, onUsersChange }) =
     setUsingFetchedData(false);
   };
 
-  const displayedUsers = usingFetchedData ? (fetchedUsers || []) : users;
-
   return (
     <div className="p-4 md:p-8 space-y-6">
       {!showForm && (

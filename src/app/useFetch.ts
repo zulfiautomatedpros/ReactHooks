@@ -9,7 +9,8 @@ interface UseFetchResult<T> {
 }
 
 function useFetch<T>(url: string, options: RequestInit = {}): UseFetchResult<T> {
-  const stableOptions = useMemo(() => options, [JSON.stringify(options)]);
+  const stringifiedOptions = JSON.stringify(options);
+  const stableOptions = useMemo(() => options, [stringifiedOptions]);
   
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState<boolean>(true);

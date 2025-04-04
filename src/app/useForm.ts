@@ -1,6 +1,5 @@
-// useForm.ts
 "use client";
-import { useState, useCallback, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 
 type Errors<T> = Partial<{ [K in keyof T]: string }>;
 
