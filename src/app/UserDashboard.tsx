@@ -166,25 +166,8 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ users, onUsersChange }) =
                         <p className="text-gray-600">
                           <span className="font-semibold">Email:</span> {user.email}
                         </p>
-                        <p className="text-gray-600">
-                          <span className="font-semibold">Username:</span> {user.username}
-                        </p>
-                        <p className="text-gray-600">
-                          <span className="font-semibold">Phone:</span> {user.phone}
-                        </p>
-                        <p className="text-gray-600">
-                          <span className="font-semibold">Website:</span> {user.website}
-                        </p>
-                        <div className="mt-2">
-                          <p>
-                            <span className="font-semibold">Company:</span> {user.company.name}
-                          </p>
-                          <p className="text-sm text-gray-500">{user.company.catchPhrase}</p>
-                        </div>
-                        <p className="mt-2">
-                          <span className="font-semibold">Address:</span>{" "}
-                          {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
-                        </p>
+               
+                      
                       </div>
                     ))}
                   </div>
